@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  background: #f8f8f8;
+  font-family: arial;
+}
+
+
+.header{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  height: 60px;
+  z-index: 2;
+  background-color: #000100;
+}
+
+.logo{
+  flex:0.8;
+  background: transparent;
+  z-index: 2;
+}
+
+#logo{
+  margin: 10px;
+  width: 70px;
+}
+
+.meny{
+  flex:1;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+a{
+  flex: 1;
+  display: flex;
+  background: #000100;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.meny > a:hover{
+  background: #c7cad1;
+}
+
+.meny > a  > p{
+  background-color: transparent;
+  color: #f8f8f8;
+  font-size: 1.2em;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.No-overflow{
+  overflow: hidden;
+}
+
+.Under_Header{
+  height: 800px;
+  background-image: url("Bilder/bakgrunn.jpg");
+  filter: blur(8px);
+  background-size: cover;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.Overskrift-boks{
+  position: absolute;
+  margin: 20px;
+  margin-top: -500px;
+  background-color: rgba(0,0,0, 0.4);
+  border: 3px solid Black;
+  padding: 50px;
+  max-width: 600px;
+}
+
+.Overskrift-boks > h1{
+  font-size: 3.5em;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+hr{
+  border-top: 3px solid rgba(0,0,0,0.7);
+  margin: 100px;
+}
+
+.flex-container-top{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.Stor_boks{
+  flex: 1;
+  max-width: 35%;
+  height: 600px;
+  margin-bottom: 40px;
+  box-shadow: 10px 0px 30px rgba(0,0,0,0.3), -10px 0px 30px rgba(0,0,0,0.3), 0px 10px 30px rgba(0,0,0,0.3), 0px -10px 30px rgba(0,0,0,0.3);
+}
+
+.Stor_boks > div {
+  width: 100%;
+  height: 100%;
+  background-image: url("Bilder/oppsamling.png");
+  background-size: cover;
+}
+
+.Stor_boks > p, .Stor_boks > h1 {
+  font-size: 2em;
+  margin: 30px;
+}
+
+.flex-container-2{
+  flex: 1;
+  max-width: 25%;
+  height: 600px;
+  margin-bottom: 40px;
+box-shadow: 10px 0px 30px rgba(0,0,0,0.3), -10px 0px 30px rgba(0,0,0,0.3), 0px 10px 30px rgba(0,0,0,0.3), 0px -10px 30px rgba(0,0,0,0.3);
+}
+
+.flex-container-3{
+  flex: 1;
+  max-width: 30%;
+  height: 600px;
+  margin-bottom: 40px;
+box-shadow: 10px 0px 30px rgba(0,0,0,0.3), -10px 0px 30px rgba(0,0,0,0.3), 0px 10px 30px rgba(0,0,0,0.3), 0px -10px 30px rgba(0,0,0,0.3);
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #000100;
+}
+
+.footer > p {
+  background-color: transparent;
+  color: #757269;
+  text-align: center;
+  font-size: 13px;
+}
+
+.underside_overskrift{
+  font-size: 3em;
+  text-align: center;
+}
+
+canvas{
+  border: 10px solid #7db5ca;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+iframe{
+  margin-top: 20px;
+  border: 0px;
+  width: 100%;
+  height: 800px;
+}
+
+.flexEN{
+  flex: 1;
+  width: 50%;
+}
+
+.sentrer-video{
+  margin: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+video{
+  border: 10px solid #7db5ca;
+}
+
+h2{
+  text-align: center;
+  width: 60%;
+}
+
+.sentrer-video > img{
+  border: 10px solid #7db5ca;
+}
+
+/*Ipad-størrelse*/
+@media (max-width: 1200px) {
+  .logo{
+    flex: 0.1;
+  }
+  .meny > a > p{
+    font-size: 1.45em;
+  }
+  #logo{
+    margin: 10px;
+    margin-right: 0px;
+    width: 90px;
+  }
+  .Stor_boks{
+    max-width: 40%;
+  }
+}
+
+/*telefon-størrelse*/
+@media (max-width: 980px) {
+  .logo{
+    flex: 0.1;
+  }
+  .meny > a{
+    min-width: 250px;
+  }
+  .meny > a > p{
+    font-size: 2.3em;
+  }
+  #logo{
+    margin: 10px;
+    width: 130px;
+  }
+  .Stor_boks{
+    min-width: 70%;
+  }
+}

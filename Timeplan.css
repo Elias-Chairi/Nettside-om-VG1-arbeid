@@ -1,0 +1,32 @@
+/*Dette er til tabbellen*/
+
+.tabell-overskrift{
+  font-size: 2.5em;
+  margin-bottom: -30px;
+  margin-left: -10px;
+}
+.tabell-overskrift-ramme{
+  border: 0px;
+}
+
+th, td {
+  border: 1px solid black;
+  width: 200px;
+}
+td{
+  text-align: center;
+}
+.tabbell{
+  line-height: 3.65;
+}
+.tomm{
+  border: 0px solid black;
+}
+.spising{
+  font-size: 30px;
+  line-height: 1;
+}
+table{
+  display: flex;
+  justify-content: center;
+}
